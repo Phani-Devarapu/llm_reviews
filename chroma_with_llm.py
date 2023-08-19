@@ -1,8 +1,10 @@
 import os
-import chromadb
 import sys
+pip install pysqlite3-binary
 __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+import chromadb
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
