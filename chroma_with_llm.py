@@ -14,6 +14,7 @@ from langchain.chains import VectorDBQA
 from langchain.document_loaders import DirectoryLoader
 from langchain.embeddings import SentenceTransformerEmbeddings
 import streamlit as st
+import unstructured
 
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import PyPDFLoader
