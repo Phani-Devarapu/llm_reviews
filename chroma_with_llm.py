@@ -22,7 +22,7 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 
-directory = '.\\data'
+directory = './data'
 os.environ['OPENAI_API_KEY'] = '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'
 
 def load_docs(directory):
