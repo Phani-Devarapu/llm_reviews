@@ -24,7 +24,7 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 directory = './data'
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 
 def load_docs(directory):
   loader = DirectoryLoader(directory)
