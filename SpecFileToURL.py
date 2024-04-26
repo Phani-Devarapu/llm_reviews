@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import FAISS
-from langchain_openai import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings.openai import OpenAIEmbeddings
 from langchain.chains.combine_documents import create_stuff_documents_chain
