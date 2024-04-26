@@ -10,6 +10,9 @@ import os
 from langchain.chains.combine_documents import create_stuff_documents_chain
 import streamlit as st
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 ## CONFIG
 
