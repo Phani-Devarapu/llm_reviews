@@ -169,7 +169,7 @@ with get_openai_callback() as cb:
         st.header("Serch here")
         prompt = st.text_input("Your Preference")
         if prompt:
-                matching_docs = db.similarity_search(prompt)
+                matching_docs = db.similarity_search(query=prompt,k=100)
                 print(matching_docs)
                 answer =  chain.run(input_documents=matching_docs, question=prompt)
                 print("the respons is " + answer)
