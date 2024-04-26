@@ -135,7 +135,7 @@ db = Chroma.from_documents(documents=final_docs, embedding=embeddings,ids = hote
 model_name = "gpt-3.5-turbo"
 llm = ChatOpenAI(model_name=model_name,temperature=0.6)
 # query = "How many hotels are there"
-# matching_docs = db.similarity_search(query)
+# matching_docs = db.similarity_search(query,k=100)
 chain = load_qa_chain(llm,verbose=True)
 
 
