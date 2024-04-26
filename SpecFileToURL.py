@@ -152,7 +152,7 @@ col1, col2 = st.columns([3, 1])
 
 with get_openai_callback() as cb:
   with col1:
-        st.header("Serch yout hotel here")
+        st.header("Get your URL from SPEC file")
         input = st.text_input("Your Preference")
         if input:
                  response = retrieval_chain.invoke({"input": input + 'GIVE ME ONLY URL',
